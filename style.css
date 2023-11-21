@@ -63,7 +63,6 @@ body {
 /* ACCORDIAN */
 
 .accordian-item {
-  border-top: 6px solid var(--main-color);
   box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
   padding: 24px;
@@ -74,16 +73,25 @@ body {
   align-items: center;
 }
 
-.accordian-item__title {
-  font-size: 24px;
-  font-weight: 500;
-  color: var(--main-color);
+.accordian-item.expanded {
+  border-top: 6px solid var(--main-color);
 }
 
+.accordian-item__title,
 .accordian-item__number {
   font-size: 24px;
   font-weight: 500;
+  /* color: var(--main-color); */
+}
+
+.accordian-item__number {
+  color: var(--light-grey-color);
+}
+
+.expanded .accordian-item__number, .expanded .accordian-item__title {
   color: var(--main-color);
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .accordian-item__icon {
@@ -94,6 +102,7 @@ body {
 
 .accordian-item__content {
   grid-column: 2 / 3;
+  display: none;
 }
 
 .accordian-item__content p {
@@ -107,4 +116,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.expanded .accordian-item__content {
+  display: block;
 }
