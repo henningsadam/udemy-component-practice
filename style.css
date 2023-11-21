@@ -1,0 +1,110 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/*
+MAIN COLOR: #087f5b
+GREY COLOR: #343a40
+*/
+
+:root {
+  --main-color: #087f5b;
+  --grey-color: #343a40;
+  --light-grey-color: #adb5bd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--grey-color);
+  border-top: 8px solid var(--main-color);
+  border-bottom: 8px solid var(--main-color);
+  line-height: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.component-header {
+  margin-bottom: 20px;
+}
+
+.component-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ul, ol {
+  padding-left: 10px;
+} */
+
+/* ------------------------ */
+/* COMPONENTS */
+/* ------------------------ */
+
+/* ACCORDIAN */
+
+.accordian-item {
+  border-top: 6px solid var(--main-color);
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  padding: 24px;
+  width: 700px;
+  display: grid;
+  grid-template: auto / auto 1fr auto;
+  gap: 24px;
+  align-items: center;
+}
+
+.accordian-item__title {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--main-color);
+}
+
+.accordian-item__number {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--main-color);
+}
+
+.accordian-item__icon {
+  width: 24px;
+  height: 24px;
+  stroke: var(--main-color);
+}
+
+.accordian-item__content {
+  grid-column: 2 / 3;
+}
+
+.accordian-item__content p {
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.accordian-item__content ul {
+  color: var(--light-grey-color);
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
