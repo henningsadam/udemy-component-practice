@@ -217,9 +217,6 @@ body {
   height: 24px;
 }
 
-.carousel__icon {
-}
-
 .dots {
   display: flex;
   gap: 12px;

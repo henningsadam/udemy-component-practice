@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        color: #444;
+        font-size: 24px;
+        display: grid;
+        height: 100vh;
+        grid-template: 80px 1fr / 80px 400px 4fr 3fr;
+      }
+
+      nav {
+        background-color: #CCC;
+        grid-row: 1 / -1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+      }
+
+      menu {
+        background-color: #EEE;
+        grid-column: 2 / -1;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+
+      button {
+        border: none;
+        cursor: pointer;
+        background-color: #DDD;
+        padding: 8px 16px;
+      }
+
+      button:last-child {
+        margin-left: auto;
+      }
+
+      section {
+        background-color: #999;
+        overflow-y: auto;
+      }
+
+      main {
+        overflow-y: auto;
+      }
+
+      aside {
+        background-color: #999;
+      }
+
+      .nav-item {
+        background-color: #DDD;
+        height: 40px;
+        width: 40px;
+        border: 2px solid #777;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .email {
+        background-color: #DDD;
+        margin: 16px;
+        padding: 16px;
+      }
+
+      .email-content {
+        padding: 16px;
+      }
+      .email-content p {
+        margin: 16px 0;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div>LOGO</div>
+      <div class="nav-item">A</div>
+      <div class="nav-item">B</div>
+      <div class="nav-item">C</div>
+      <div class="nav-item">D</div>
+      <div class="nav-item">E</div>
+    </nav>
+    <menu>
+      <button>New</button>
+      <button>Reply</button>
+      <button>Forward</button>
+      <button>Mark Unread</button>
+      <button>Trash</button>
+    </menu>
+    <section>Inbox
+      <div class="email">Email</div>
+      <div class="email">Email</div>
+      <div class="email">Email</div>
+      <div class="email">Email</div>
+      <div class="email">Email</div>
+      <div class="email">Email</div>
+      <div class="email">Email</div>
+      <div class="email">Email</div>
+      <div class="email">Email</div>
+      <div class="email">Email</div>
+    </section>
+    <main>Email View
+      <div class="email-content">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae asperiores iste vero nihil quo similique rem temporibus recusandae cumque, perspiciatis consequuntur facilis nulla, reprehenderit ab inventore quod. Blanditiis, hic reprehenderit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum optio aperiam blanditiis nulla fugiat repellendus dignissimos vitae distinctio. Quam nostrum officia at obcaecati fugiat magni deleniti reiciendis quae repudiandae sint?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, aliquid sint. Ducimus at corrupti non reiciendis, itaque ratione numquam asperiores incidunt saepe ipsa quae! Et impedit amet ut quam sint?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae in quo sint mollitia nam magnam sunt illo voluptatum explicabo distinctio nemo, excepturi recusandae dicta deleniti atque provident ex omnis voluptates!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sit molestiae fugit adipisci eaque optio omnis quaerat repudiandae! Ipsam culpa ducimus cumque deleniti ut. Possimus eveniet dolor quod nam corrupti.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit quo deserunt labore blanditiis sapiente eius illum pariatur voluptatem quia voluptates. Est vel neque dolores fugiat eligendi temporibus a minima necessitatibus.</p>
+      </div>
+    </main>
+    <aside>Add'l Info</aside>
+  </body>
+</html>
